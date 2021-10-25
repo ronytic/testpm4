@@ -24,7 +24,7 @@ fclose($fp);*/
     $pdf->cell(100,40,"HOLA DESDE EL PDF");
     $reponse = $pdf->Output("F",'doc.pdf');
 
-    //print_r($reponse);
+    print_r($reponse);
 }catch(Exception $e){
     echo $e->getMessage();
 };
