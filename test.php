@@ -22,7 +22,7 @@ fclose($fp);*/
     $pdf->SetFont("Arial","B",12);
     $pdf->AddPage();
     $pdf->cell(100,40,"HOLA DESDE EL PDF");
-    $reponse = $pdf->Output("F",'doc.pdf');
+    $reponse = $pdf->Output("S",'doc.pdf');
 
     print_r($reponse);
 }catch(Exception $e){
