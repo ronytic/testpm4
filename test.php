@@ -18,7 +18,7 @@ while (!feof($fp)){
 }
 fclose($fp);*/
     //use Fpdf\Fpdf;
-    $pdf = new Fpdf\Fpdf("letter","mm","P");
+    $pdf = new Fpdf\Fpdf("P",'mm',"letter");
     $pdf->SetFont("Arial","B",12);
     $pdf->AddPage();
     $pdf->cell(100,40,"HOLA DESDE EL PDF");
